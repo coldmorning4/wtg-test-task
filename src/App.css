@@ -1,38 +1,129 @@
-.App {
-  text-align: center;
+#users {
+    font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+    border-collapse: collapse;
+    width: 100%;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+#users td {
+    border: 1px solid #ddd;
+    padding: 8px;
+    width: 30%;
+    max-width: 0;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+#users-title td {
+    padding: 8px;
+    width: 35%;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+#users-title {
+    font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+    border: 1px solid #ddd;
+    padding: 8px;
+    width: 100%;
+    background-color: #bf9a3b;
 }
 
-.App-link {
-  color: #61dafb;
+/*BUTTON*/
+
+.container-button {
+    display: flex;
+    justify-content: space-between;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.btn {
+    border-radius: 5px;
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+    opacity: 0.7;
+}
+
+.btn-edit {
+    background-color: #bf9a3b;
+}
+
+.btn-edit:hover {
+    background-color: #eabd48;
+    opacity: 1.0;
+    outline: none;
+}
+
+.btn-delete {
+    background-color: #b80f2f;
+}
+
+.btn-delete:hover {
+    background-color: #d6092f;
+    opacity: 1.0;
+    outline: none;
+}
+
+.btn-add {
+    background-color: #bf9a3b;
+    width: 200px;
+}
+
+.btn-add:hover {
+    background-color: #eabd48;
+    opacity: 1.0;
+    outline: none;
+}
+
+.btn-delete-all {
+    background-color: #1a1919;
+    width: 200px;
+}
+
+.btn-delete-all:hover {
+    background-color: #1a1919;
+    opacity: 0.9;
+    outline: none;
+}
+
+/*MODAL*/
+
+.btn-modal {
+    width: 100%;
+    border-radius: 5px;
+    border: none;
+    color: #ffffff;
+    padding: 5px 2px;
+    text-align: center;
+    font-size: 14px;
+    margin: 4px 2px;
+    cursor: pointer;
+    opacity: 0.7;
+}
+
+.btn-add-modal {
+    background-color: #b7a378;
+}
+
+.btn-add-modal:hover {
+    background-color: #b7a378;
+    opacity: 1;
+}
+
+.btn-cancel-modal {
+    background-color: #353535;
+}
+
+.btn-cancel-modal:hover {
+    background-color: #353535;
+    opacity: 1;
+}
+
+input {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
 }
